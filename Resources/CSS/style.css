@@ -1,14 +1,27 @@
 body {
-  background-color: white;
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  background-color: white;
 }
 
-#wrapper {
-  min-width: auto;
+#header {
+height: 5vh;
+
 }
 
 #fullscreen-landing {
+  height: 90vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#fullscreen-contact {
   height: 100vh;
   position: relative;
   text-align: center;
@@ -18,10 +31,9 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
-
 }
 
-#fullscreen-contact {
+#fullscreen-testimonials {
   height: 100vh;
   position: relative;
   text-align: center;
