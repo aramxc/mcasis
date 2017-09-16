@@ -1886,8 +1886,16 @@
 		text-decoration: none;
 		white-space: nowrap;
 		text-transform: uppercase;
-		margin: 0 1.5em; 
+
 	}
+
+#navmenu button {
+background-color: white;
+color: black !important;
+margin: 0 1em;
+
+}
+
 
 		input[type="submit"].icon,
 		input[type="reset"].icon,
