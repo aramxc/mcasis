@@ -1,0 +1,150 @@
+/*********************************************************
+*TABLE OF CONTENTS
+*
+* 1) BODY AND CONTAINER
+* 2) TEXT
+* 3) BACKGROUND
+* 4) NAV BAR
+* 5) FULLSCREEN-HERO
+*********************************************************/
+
+
+/*
+*
+*
+*
+*
+*/
+
+
+/*********************************************************
+* 1) BODY
+*********************************************************/
+
+body {
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*********************************************************
+* 2) TEXT STYLES
+*********************************************************/
+
+.headerText {
+  font-family: 'Josefin Slab', serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.dark {
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+/*********************************************************
+* 3) BACKGROUND
+*********************************************************/
+
+#mainBackground {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: -1000;
+}
+
+
+/*********************************************************
+* 4) NAV BAR
+*********************************************************/
+
+header {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+li a, li a:visited {
+  color: #a8a8a8;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #07C;
+  font-weight: 700;
+}
+
+.active, .active:visited, .active:focus {
+  color: #07C;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 727px) {
+  #navBar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav {
+    display: inline-block;
+    width: 100%;
+  }
+  #nav li {
+    display: inline;
+    padding: 2em;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 726px) {
+  #navBar {
+    width: 100%;
+  }
+  #nav {
+    margin: 0 auto;
+    padding: 0;
+    height: 48px;
+    width: 100%;
+    list-style: none;
+    font-size: 0.8em;
+  }
+  #nav li {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+    padding: 6px;
+  }
+}
+
+/*********************************************************
+* 4) FULLSCREEN-HERO
+*********************************************************/
+.fullscreen-hero {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
