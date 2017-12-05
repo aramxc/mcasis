@@ -6,6 +6,7 @@
 * 3) BACKGROUND
 * 4) NAV BAR
 * 5) FULLSCREEN-HERO
+* 6) CONTACT
 *********************************************************/
 
 
@@ -34,6 +35,7 @@ body {
 
 .headerText {
   font-family: 'Josefin Slab', serif;
+  text-align: center;
 }
 
 .bold {
@@ -86,65 +88,63 @@ header {
   margin-left: 0;
 }
 
-li a, li a:visited {
-  color: #a8a8a8;
+.navbar-collapse {
+  display: inline-flex;
+  justify-content: flex-end;
 }
 
-li a:hover {
-  text-decoration: none;
-  color: #07C;
-  font-weight: 700;
+.menu-logo {
+  height: 32px;
+  width: 304px;
 }
 
-.active, .active:visited, .active:focus {
-  color: #07C;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-@media only screen and (min-width: 727px) {
-  #navBar {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #nav {
-    display: inline-block;
-    width: 100%;
-  }
-  #nav li {
-    display: inline;
-    padding: 2em;
-    width: 100%;
-    margin: 0;
+@media only screen and (max-width: 529px) {
+  .navbar-brand h2{
+    font-size: 0.875em;
   }
 }
 
-@media only screen and (max-width: 726px) {
-  #navBar {
-    width: 100%;
-  }
-  #nav {
-    margin: 0 auto;
-    padding: 0;
-    height: 48px;
-    width: 100%;
-    list-style: none;
-    font-size: 0.8em;
-  }
-  #nav li {
-    display: inline-block;
-    width: 20%;
-    margin: 0;
-    padding: 6px;
-  }
-}
+
 
 /*********************************************************
 * 4) FULLSCREEN-HERO
 *********************************************************/
 .fullscreen-hero {
  width: 100%;
+ height: auto;
  display: flex;
  justify-content: center;
+}
+
+.fotorama {
+  -webkit-box-shadow: 2px 3px 12px #222;
+-moz-box-shadow: 2px 3px 12px #222;
+box-shadow: 2px 3px 12px #222;
+}
+
+/*********************************************************
+* 5) FOOTER
+*********************************************************/
+.footer {
+  text-align: center;
+  width: 100%;
+}
+
+.footer h6 {
+  color: #999999;
+}
+
+hr {
+  width: 80%;
+}
+
+.social-menu i{
+  padding: 0 1em;
+}
+
+/*********************************************************
+* 6) CONTACT MODAL
+*********************************************************/
+header {
+padding: 0 20px;
 }
