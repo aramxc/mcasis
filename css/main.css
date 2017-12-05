@@ -98,9 +98,15 @@ header {
   width: 304px;
 }
 
-@media only screen and (max-width: 529px) {
+@media only screen and (min-width: 401px) and (max-width: 992px) {
   .navbar-brand h2{
     font-size: 0.875em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-brand h2{
+    font-size: 0.750em;
   }
 }
 
